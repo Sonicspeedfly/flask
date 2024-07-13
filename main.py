@@ -3,7 +3,7 @@ import os
 
 app = Flask(__name__)
 
-@app.route('/webhook', methods=['POST'])
+@app.route('/')
 def webhook():
     data = request.json
     user_id = data['message']['from']['id']
